@@ -80,6 +80,8 @@ kind: Ingress
 metadata:
   name: oauth2-proxy
   namespace: oauth2-proxy
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   ingressClassName: nginx
   rules:
