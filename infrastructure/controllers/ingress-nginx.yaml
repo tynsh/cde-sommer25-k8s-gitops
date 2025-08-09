@@ -35,5 +35,3 @@ spec:
     controller:
       config:
         strict-validate-path-type: false
-        allow-snippet-annotations: true
-        annotations-risk-level: Critical

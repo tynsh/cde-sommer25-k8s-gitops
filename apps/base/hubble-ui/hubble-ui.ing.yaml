@@ -4,17 +4,6 @@ metadata:
   name: hubble-ui
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
-    nginx.ingress.kubernetes.io/auth-response-headers: Authorization
-    nginx.ingress.kubernetes.io/auth-signin: https://oauth2-proxy.phippy-crew.tynsh.de/oauth2/start?rd=$escaped_request_uri
-    nginx.ingress.kubernetes.io/auth-url: https://oauth2-proxy.oauth2-proxy.svc.cluster.local:4180/oauth2/auth
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      auth_request_set $name_upstream_1 $upstream_cookie_name_1;
-
-      access_by_lua_block {
-        if ngx.var.name_upstream_1 ~= "" then
-          ngx.header["Set-Cookie"] = "name_1=" .. ngx.var.name_upstream_1 .. ngx.var.auth_cookie:match("(; .*)")
-        end
-      }
 spec:
   ingressClassName: nginx
   rules:
