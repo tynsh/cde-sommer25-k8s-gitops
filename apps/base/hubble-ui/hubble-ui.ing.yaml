@@ -3,9 +3,6 @@ kind: Ingress
 metadata:
   name: hubble-ui
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/auth-url: "https://oauth2-proxy.phippy-crew.tynsh.de/oauth2/auth"
-    nginx.ingress.kubernetes.io/auth-signin: "https://oauth2-proxy.phippy-crew.tynsh.de/oauth2/start?rd=$escaped_request_uri"
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   ingressClassName: nginx

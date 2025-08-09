@@ -29,7 +29,7 @@ spec:
         - --email-domain=*
         - --upstream=file:///dev/null
         - --http-address=0.0.0.0:4180
-        - --whitelist-domain=.tynsh.de
+        - --whitelist-domain=.phippy-crew.tynsh.de
         env:
         - name: OAUTH2_PROXY_CLIENT_ID
           valueFrom:
