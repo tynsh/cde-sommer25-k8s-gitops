@@ -11,14 +11,17 @@ spec:
   - host: "phippy-gang.tynsh.de"
     http:
       paths:
-      - path: /vote
+      - path: /
         pathType: Prefix
         backend:
           service:
             name: vote
             port:
               number: 80
-      - path: /result
+  - host: "result.phippy-gang.tynsh.de"
+    http:
+      paths:
+      - path: /
         pathType: Prefix
         backend:
           service:
@@ -28,4 +31,5 @@ spec:
   tls:
   - hosts:
       - "phippy-gang.tynsh.de"
+      - "result.phippy-gang.tynsh.de"
     secretName: "vote-tls"
