@@ -85,7 +85,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: oauth2-proxy.phippy-gang.tynsh.de
+  - host: oauth2-proxy.phippy-crew.tynsh.de
     http:
       paths:
       - path: /oauth2
@@ -97,6 +97,6 @@ spec:
               number: 4180
   tls:
   - hosts:
-    - oauth2-proxy.phippy-gang.tynsh.de
+    - oauth2-proxy.phippy-crew.tynsh.de
     secretName: oauth2-proxy-tls
 

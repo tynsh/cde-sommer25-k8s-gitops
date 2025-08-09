@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: hubble-ui.phippy-gang.tynsh.de
+  - host: hubble-ui.phippy-crew.tynsh.de
     http:
       paths:
       - path: /
@@ -22,6 +22,6 @@ spec:
               number: 80
   tls:
   - hosts:
-    - hubble-ui.phippy-gang.tynsh.de
+    - hubble-ui.phippy-crew.tynsh.de
     secretName: hubble-ui-tls
 
