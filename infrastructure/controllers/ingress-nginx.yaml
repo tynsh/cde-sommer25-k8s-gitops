@@ -36,4 +36,4 @@ spec:
       config:
         strict-validate-path-type: false
         allow-snippet-annotations: true
-        annotations-risk-level: High
+        annotations-risk-level: Critical
