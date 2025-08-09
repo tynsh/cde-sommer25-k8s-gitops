@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: gke-managed-dpv2-observability
 resources:
 - hubble-ui.yaml
+- hubble-ui.ing.yaml
