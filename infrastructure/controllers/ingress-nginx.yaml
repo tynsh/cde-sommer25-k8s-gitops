@@ -34,4 +34,4 @@ spec:
   values:
     controller:
       config:
-        strict-validate-path: "false"
+        strict-validate-path-type: false
